@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./css/index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/76230cc10f.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Vivero Green Life</title>
+  </head>
+  <body>
+    <!-- Inicio navbar -->
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Green Life</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html"
+                >Home</a
+              >
+            </li>            
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/detalle_de_carrito.html"
+                >Carrito</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/ingresar.html">Ingresar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/sobre_nosotros.html"
+                >Nosotros</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Buscar"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Buscar
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!--Fin navbar-->
+    <!--slider-->
+    <section class="slider">
+      <div class="slider1">
+        <div
+          id="carouselExampleSlidesOnly"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./img/slider 1 canva.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./img/slider 2 canva.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--categorias-->
+    <div class="categorias">
+      <ul>
+        <li><a href="./pages/error.html">Todas</a></li>
+        <li><a href="./pages/interior.html">Interior</a></li>
+        <li><a href="./pages/error.html">Exterior</a></li>
+        <li><a href="./pages/jardineria.html">Artículos de jardinería</a></li>
+      </ul>
+    </div>
+    <section class="New in">
+      <div class="container">
+        <div class="titulo1">
+          <h3>New in</h3>
+        </div>
+      </div>
+    </section>
+    <!--destacados-->
+    <section class="destacados">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <a href="#">
+              <img src="./img/producto 28.jpg" alt="" />
+              <div class="product-bottom text-center">
+                <h5>Fertilizante</h5>
+                <h6>$900</h6>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="./img/violeta_de_los_alpes.jpg" alt="" />
+              <div class="product-bottom text-center">
+                <h5>Violeta de los Alpes</h5>
+                <h6>$770</h6>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="./pages/producto_ficus.html">
+              <img src="./img/Ficus_sin_fondo.png" alt="" />
+              <div class="product-bottom text-center">
+                <h5>Ficus Benjamina</h5>
+                <h6>$5.300</h6>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="./img/producto 4.jpg" alt="" />
+              <div class="product-bottom text-center">
+                <h5>Helecho</h5>
+                <h6>$600</h6>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--on sale-->
+    <section class="On Sale">
+      <div class="container">
+        <div class="titulo">
+          <h3>On Sale</h3>
+        </div>
+      </div>
+      <!-- on sale productos-->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <a href="#">
+              <img src="./img/alegria_del_hogar-removebg-preview.png" alt="" />
+              <div class="product-bottom text-center">
+                <h5>Alegría del Hogar</h5>
+                <h6>$160</h6>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="./img/producto 8.jpg" alt="" />
+              <div class="product-bottom text-center">
+                <h5>Potus</h5>
+                <h6>$1.100</h6>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="./pages/producto_suculenta.html"
+              ><img src="./img/suculenta_sin_fondo.png" alt="" />
+              <div class="product-bottom text-center">
+                <h5>Suculenta</h5>
+                <h6>$300</h6>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="./img/cactus.jpg" alt="" />
+              <div class="product-bottom text-center">
+                <h5>Cactus</h5>
+                <h6>$250</h6>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Nuestros productos titulo-->
+    <section class="Nuestros productos">
+      <div class="container">
+        <div class="titulo1">
+          <h3>All</h3>
+        </div>
+      </div>
+      <!--nuestros productos-->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <a href="./pages/producto_glacoxan.html">
+              <img src="./img/Producto 34.jpg" alt="" />
+              <div class="product-bottom text-center">
+                <h5>GlacoXAN</h5>
+                <h6>$740</h6>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="./img/pala_de_mano.jpg" alt="" />
+              <div class="product-bottom text-center">
+                <h5>Pala de mano</h5>
+                <h6>$690</h6>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="./img/Aechmea_Fasciata.jpg" alt="" />
+              <div class="product-bottom text-center">
+                <h5>Aechmea Fasciata</h5>
+                <h6>$3.700</h6>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="./img/guantes_moteados.jpg" alt="" />
+              <div class="product-bottom text-center">
+                <h5>Guantes moteados</h5>
+                <h6>$690</h6>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <!--Footer-->
+    <!--Footer-->
+    <footer class="bg-dark pt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h3>Redes sociales</h3>
+            <p>
+              Síguenos en nuestras redes sociales para estar al tanto de las
+              últimas novedades y promociones:
+            </p>
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3"></div>
+          <div class="col-md-3"></div>
+          <div class="col-md-3">
+            <h3>Contacto</h3>
+            <p>Teléfono: 555-555-5555</p>
+            <p>Email: info@nuestraempresa.com</p>
+            <p>Dirección: Calle, Ciudad, País</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--Fin footer-->
+
+    <!--Fin footer-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

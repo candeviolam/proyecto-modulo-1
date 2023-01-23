@@ -1,0 +1,54 @@
+CSS * {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --verde-oscuro: #498553;
+  --verde-medio: #d7eadd;
+  --verde-claro: #e9f3ed;
+  --verde-amarillo: #c2cf0ab6;
+  --color-fondo: #e7eee8;
+  --verde-azulado: #13542d;
+}
+
+form {
+  width: 70%;
+  margin: 0 auto;
+  background-color: #c2cf0ab6;
+  padding: 2em;
+  border-radius: 5px;
+}
+
+.fondo-formulario {
+  background-color: #bce9ca;
+  border-radius: 20px;
+  box-shadow: 7px 6px 6px -1px rgba(0, 0, 0, 0.347);
+}
+
+.input-formulario {
+  width: 85%;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid #36932e;
+}
+
+.boton-formulario {
+  background-color: #36932e;
+  border-radius: 15px;
+  width: 80%;
+}
+
+.boton-formulario:hover {
+  background-color: #33e26a;
+  transition: 0.3s;
+}
+
+footer {
+  color: white;
+}
+
+footer i {
+  color: var(--verde-oscuro);
+}

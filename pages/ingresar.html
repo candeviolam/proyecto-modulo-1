@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../css/estilo.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/76230cc10f.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Vivero Green Life</title>
+  </head>
+  <body>
+    <!-- Inicio navbar -->
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Green Life</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Productos
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="./interior.html">Interior</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Exterior</a></li>
+                <li>
+                  <a class="dropdown-item" href="./jardineria.html"
+                    >Artículos de jardinería</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./detalle_de_carrito.html">Carrito</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./ingresar.html">Ingresar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./sobre_nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contacto.html">Contacto</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Buscar"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Buscar
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!--Fin navbar-->
+    <div class="ingreso">
+      <form action="/login" method="POST">
+        <label for="username">Nombre de usuario:</label><br />
+        <input type="text" id="username" name="username" /><br />
+        <label for="password">Contraseña:</label><br />
+        <input type="password" id="password" name="password" /><br /><br />
+        <input type="submit" value="Iniciar sesión" />
+      </form>
+    </div>
+    <!--Footer-->
+    <footer class="bg-dark pt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h3>Redes sociales</h3>
+            <p>
+              Síguenos en nuestras redes sociales para estar al tanto de las
+              últimas novedades y promociones:
+            </p>
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3"></div>
+          <div class="col-md-3"></div>
+          <div class="col-md-3">
+            <h3>Contacto</h3>
+            <p>Teléfono: 555-555-5555</p>
+            <p>Email: info@nuestraempresa.com</p>
+            <p>Dirección: Calle, Ciudad, País</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--Fin footer-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

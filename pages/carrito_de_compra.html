@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/estilo.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/76230cc10f.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Vivero Green Life</title>
+  </head>
+  <body>
+    <!-- Inicio navbar -->
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Green Life</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./detalle_de_carrito.html">Carrito</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./ingresar.html">Ingresar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./sobre_nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contacto.html">Contacto</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Buscar"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Buscar
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!--Fin navbar-->
+    <!--Contenido-->
+    <div class="container contenedor_carrito_de_compra">
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-12 col-lg-8">
+          <form>
+            <!--Datos de contacto-->
+            <div class="contenedor datos_de_contacto">
+              <h5 class="titulo">Datos de contacto</h5>
+              <div class="form-floating mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="ejemplo@ejemplo.com"
+                  required
+                />
+                <label for="floatingInput">Email</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="inlineCheckbox1"
+                  value="option1"
+                />
+                <label class="form-check-label" for="inlineCheckbox1"
+                  >Quiero recibir ofertas y novedades por email</label
+                >
+              </div>
+            </div>
+            <!--Fin datos de contacto-->
+            <!--Info de entrega-->
+            <div class="contenedor info_entrega">
+              <h5 class="titulo">Entrega</h5>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="flexRadioDefault"
+                  id="flexRadioDefault1"
+                />
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Envío a domicilio
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="flexRadioDefault"
+                  id="flexRadioDefault2"
+                  checked
+                />
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Retiro del local
+                </label>
+              </div>
+            </div>
+            <!--Fin info de entrega-->
+            <!--Datos de facturación-->
+            <div class="contenedor facturacion">
+              <h5 class="titulo">Datos de facturación</h5>
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="nombre"
+                  required
+                />
+                <label for="floatingInput">Nombre</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="apellido"
+                  required
+                />
+                <label for="floatingInput">Apellido</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="telefono"
+                  required
+                />
+                <label for="floatingInput">Teléfono</label>
+              </div>
+            </div>
+            <!--Fin datos de facturación-->
+            <!--Domicilio-->
+            <div class="contenedor domicilio">
+              <h5 class="titulo">Domicilio</h5>
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="calle"
+                  required
+                />
+                <label for="floatingInput">Calle</label>
+              </div>
+              <div class="form-floating mb-3 contenedor_sin_numero">
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="numero"
+                  required
+                />
+                <label for="floatingInput">Número</label>
+                <div class="sin_numero">
+                  <input type="checkbox" />
+                  <span>Sin número</span>
+                </div>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="departamento"
+                />
+                <label for="floatingInput">Departamento (Opcional)</label>
+              </div>
+              <div class="form-floating">
+                <select
+                  class="form-select"
+                  id="seleccionar_pais"
+                  aria-label="Floating label select example"
+                  required
+                >
+                  <option selected>Argentina</option>
+                  <option value="2">Brasil</option>
+                  <option value="3">Chile</option>
+                  <option value="3">Paraguay</option>
+                  <option value="3">Uruguay</option>
+                </select>
+                <label for="floatingSelect">País</label>
+              </div>
+              <div class="form-floating">
+                <select
+                  class="form-select"
+                  id="seleccionar_provincia"
+                  aria-label="Floating label select example"
+                  required
+                >
+                  <option selected>Tucumán</option>
+                  <option value="1">Buenos Aires</option>
+                  <option value="2">Chaco</option>
+                  <option value="3">Córdoba</option>
+                  <option value="3">Formosa</option>
+                  <option value="3">Jujuy</option>
+                  <option value="3">La Rioja</option>
+                  <option value="3">Salta</option>
+                  <option value="3">Santa Cruz</option>
+                  <option value="3">Santiago del Estero</option>
+                </select>
+                <label for="floatingSelect">Provincia</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="ciudad"
+                  required
+                />
+                <label for="floatingInput">Ciudad</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="cp"
+                  required
+                />
+                <label for="floatingInput">Código Postal</label>
+              </div>
+            </div>
+            <!--Fin domicilio-->
+            <!--Medio de pago-->
+            <div class="contenedor medio_de_pago">
+              <h5 class="titulo">Medios de Pago</h5>
+              <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseOne"
+                      aria-expanded="true"
+                      aria-controls="panelsStayOpen-collapseOne"
+                    >
+                      Trjetas de crédito y débito
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapseOne"
+                    class="accordion-collapse collapse show"
+                    aria-labelledby="panelsStayOpen-headingOne"
+                  >
+                    <div class="accordion-body">
+                      <div class="form-floating mb-3">
+                        <input
+                          type="tel"
+                          class="form-control"
+                          id="floatingInput"
+                          placeholder="numero_de_tarjeta"
+                          required
+                        />
+                        <label for="floatingInput">Número de tarjeta</label>
+                      </div>
+                      <div class="datos_tarjeta">
+                        <div class="row">
+                          <div class="form-floating mb-3 col-12 col-lg-6">
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="floatingInput"
+                              placeholder="titular_de_tarjeta"
+                            />
+                            <label for="floatingInput"
+                              >Titular de tarjeta</label
+                            >
+                          </div>
+                          <div class="form-floating mb-3 col-7 col-lg-3">
+                            <input
+                              type="month"
+                              class="form-control"
+                              id="floatingInput"
+                              placeholder="vencimiento"
+                            />
+                            <label for="floatingInput"
+                              >Vencimiento (MM/AA)</label
+                            >
+                          </div>
+                          <div class="form-floating mb-3 col-5 col-lg-3 cvv">
+                            <input
+                              type="tel"
+                              class="form-control"
+                              id="floatingInput"
+                              placeholder="cvv"
+                            />
+                            <label for="floatingInput">CVV</label>
+                            <div class="codigo_de_seguridad">
+                              <i
+                                class="fa-regular fa-circle-question"
+                                data-bs-toggle="tooltip"
+                                data-bs-placement="left"
+                                title="CVV (código de seguridad)) es un grupo de 3 o
+                                4 números situado en el reverso de la tarjeta."
+                              ></i>
+                              <!-- <div class="tooltip">
+                                <div>
+                                  CVV (código de seguridad)) es un grupo de 3 o
+                                  4 números situado en el reverso de la tarjeta.
+                                </div>
+                                <div>
+                                  <img
+                                    src="../img/cvv2.jpg"
+                                    alt="CVV (código de seguridad)"
+                                  />
+                                </div>
+                              </div> -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cuotas">
+                        <div class="row">
+                          <div class="form-floating">
+                            <select
+                              class="form-select"
+                              id="floatingSelectGrid"
+                              aria-label="Floating label select example"
+                            >
+                              <option selected>1x$300,00</option>
+                            </select>
+                            <label for="floatingSelectGrid">Cuotas</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="documento">
+                        <div class="row">
+                          <div class="col-md col-12 col-lg-3">
+                            <div class="form-floating">
+                              <select
+                                class="form-select"
+                                id="floatingSelectGrid"
+                                aria-label="Floating label select example"
+                              >
+                                <option selected>DNI</option>
+                                <option value="1">Cédula</option>
+                                <option value="2">CUIL</option>
+                                <option value="3">Otro</option>
+                              </select>
+                              <label for="floatingSelectGrid">Documento</label>
+                            </div>
+                          </div>
+                          <div class="form-floating mb-3 col-12 col-lg-9">
+                            <input
+                              type="tel"
+                              class="form-control"
+                              id="floatingInput"
+                              placeholder="numero_dni"
+                            />
+                            <label for="floatingInput"
+                              >Documento del titular</label
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapseTwo"
+                    >
+                      Transferencia Bancaria
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapseTwo"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingTwo"
+                  >
+                    <div class="accordion-body">
+                      Cuando termines la compra, vas a ver la información de
+                      pago.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Fin medio de pago-->
+            <!--Notas-->
+            <div class="contenedor notas_de_pedido">
+              <h5 class="titulo">Notas de pedido</h5>
+              <div class="form-floating">
+                <textarea
+                  class="form-control"
+                  placeholder="notas_de_pedido"
+                  id="floatingTextarea2"
+                  style="height: 100px"
+                ></textarea>
+                <label for="floatingTextarea2">Notas</label>
+              </div>
+            </div>
+            <!--Fin notas-->
+            <div class="contenedor botones_enviar_restablecer">
+              <a href="/pages/error.html"
+                ><input type="button" value="Enviar"
+              /></a>
+              <input type="reset" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!--Fin de contenido-->
+    <!--Footer-->
+    <footer class="bg-dark pt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h3>Redes sociales</h3>
+            <p>
+              Síguenos en nuestras redes sociales para estar al tanto de las
+              últimas novedades y promociones:
+            </p>
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3"></div>
+          <div class="col-md-3"></div>
+          <div class="col-md-3">
+            <h3>Contacto</h3>
+            <p>Teléfono: 555-555-5555</p>
+            <p>Email: info@nuestraempresa.com</p>
+            <p>Dirección: Calle, Ciudad, País</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--Fin footer-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

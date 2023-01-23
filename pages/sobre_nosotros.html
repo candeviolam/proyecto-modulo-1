@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/sobre_nosotros.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/76230cc10f.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Vivero Green Life</title>
+  </head>
+  <body>
+    <!-- Inicio navbar -->
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Green Life</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Productos
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="./interior.html">Interior</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Exterior</a></li>
+                <li>
+                  <a class="dropdown-item" href="./jardineria.html"
+                    >Artículos de jardinería</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./detalle_de_carrito.html">Carrito</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./ingresar.html">Ingresar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./sobre_nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contacto.html">Contacto</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Buscar"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Buscar
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!--Fin navbar-->
+    <!-- Inicio sobre nosotros -->
+    <div class="container">
+      <h3 class="text-center py-lg-3">Sobre nosotros</h3>
+      <div class="row divdiv">
+        <div class="col-sm-7">
+          <h5 class="mt-3 mt-sm-5 mb-2 mb-sm-3 text-center text-lg-start">
+            Quienes somos
+          </h5>
+          <p class="text-center text-lg-start">
+            Somos un equipo nacido por el deseo del conocimiento, con hambre de
+            prosperidad, voluntad para poner lo mejor de cada uno y la ilusión
+            de algún día cosechar lo sembrado, inspirados por un mentor
+            increíble y un tutor que sabe acompañar como nadie más. <br />
+            Nuestro agradecimiento hacia la Comunidad de Rolling es y será
+            eterno. ¡Gracias!
+          </p>
+        </div>
+        <div class="col-sm-5 d-none d-sm-flex">
+          <img
+            src="../img/equipo-2.png"
+            alt=""
+            class="imagen-quienes-somos mt-sm-5 mt-md-5 mt-lg-4 img-fluid h-50"
+          />
+        </div>
+      </div>
+      <!-- Fin sobre nosotros -->
+      <!-- Inicio nuestra mision -->
+      <div class="row">
+        <div class="col-sm-5 d-flex justify-content-center">
+          <img
+            src="../img/mision-1.png"
+            alt=""
+            class="imagen-quienes-somos d-none d-sm-flex img-fluid mt-sm-5 mt-md-4 mt-lg-3 h-75"
+          />
+        </div>
+        <div class="col-sm-7">
+          <h5 class="mt-4 mt-sm-5 mb-3 text-center text-lg-start">
+            Nuestra misión
+          </h5>
+          <p class="text-center text-lg-start">
+            Nuestra misión a lo largo de estos meses es explotar al máximo el
+            contenido y los recursos brindados cada semana, priorizando la
+            educación, el compañerismo y la competencia sana.
+          </p>
+        </div>
+      </div>
+      <!-- Fin nuestra mision -->
+      <!-- Inicio nuestro equipo -->
+      <h4
+        class="text-center py-4 pt-sm-5 pb-sm-4 py-md-4 pt-md-5 py-lg-3 pb-lg-5"
+      >
+        Nuestro equipo
+      </h4>
+      <div class="contenedor-tarjetas d-inline-flex flex-wrap d-md-flex">
+        <!-- Persona 1 -->
+        <div class="tarjeta mb-3 py-4 mb-md-5" style="width: 16rem">
+          <img src="../img/Persona-1.png" class="card-img-top pb-2" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title text-center pb-3">Huerto Laurent</h5>
+          </div>
+        </div>
+        <!-- Persona 2 -->
+        <div class="tarjeta mb-3 py-4 mb-md-5" style="width: 16rem">
+          <img src="../img/persona-2.png" class="card-img-top pb-2" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title text-center pb-3">Candelaria Viola</h5>
+          </div>
+        </div>
+        <!-- Persona 3 -->
+        <div class="tarjeta mb-3 py-4 mb-md-5" style="width: 16rem">
+          <img src="../img/persona-4.png" class="card-img-top pb-2" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title text-center pb-3">Mateo Homet</h5>
+          </div>
+        </div>
+        <!-- Persona 4 -->
+        <div class="tarjeta mb-3 py-4 mb-md-5" style="width: 16rem">
+          <img src="../img/Persona-3.png" class="card-img-top pb-2" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title text-center pb-3">Ayelen Khoury</h5>
+          </div>
+        </div>
+      </div>
+      <!-- Fin nuestro equipo -->
+    </div>
+    <!-- Fin sobre nosotros -->
+    <!--Footer-->
+    <footer class="bg-dark pt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h3>Redes sociales</h3>
+            <p>
+              Síguenos en nuestras redes sociales para estar al tanto de las
+              últimas novedades y promociones:
+            </p>
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3"></div>
+          <div class="col-md-3"></div>
+          <div class="col-md-3">
+            <h3>Contacto</h3>
+            <p>Teléfono: 555-555-5555</p>
+            <p>Email: info@nuestraempresa.com</p>
+            <p>Dirección: Calle, Ciudad, País</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--Fin footer-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

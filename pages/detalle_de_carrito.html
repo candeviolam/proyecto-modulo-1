@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/detalle_de_carrito.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/76230cc10f.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Vivero Green Life</title>
+  </head>
+  <body>
+    <!-- Inicio navbar -->
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Green Life</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Productos
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="./interior.html">Interior</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Exterior</a></li>
+                <li>
+                  <a class="dropdown-item" href="./jardineria.html"
+                    >Artículos de jardinería</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./detalle_de_carrito.html">Carrito</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./ingresar.html">Ingresar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./sobre_nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contacto.html">Contacto</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Buscar"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Buscar
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!--Fin navbar-->
+    <!--Contenido-->
+    <div class="container-lg contenido_escritorio">
+      <div class="contenedor_encabezado">
+        <h4 class="encabezado">Carrito de compras</h4>
+      </div>
+      <table class="table contenedor_tabla">
+        <thead>
+          <tr class="titulo">
+            <th scope="col-5">Producto</th>
+            <th scope="col-2">Cantidad</th>
+            <th scope="col-2">Precio</th>
+            <th scope="col-2">Subtotal</th>
+            <th scope="col-1"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td scope="row">
+              <div class="producto">
+                <img src="../img/Ficus_sin_fondo.png" alt="Ficus Benjamina" />
+                <p>Ficus Benjamina</p>
+              </div>
+            </td>
+            <td>
+              <i class="fa-solid fa-minus"></i
+              ><input type="tel" placeholder="1" min="1" required /><i
+                class="fa-solid fa-plus"
+              ></i>
+            </td>
+            <td>$5.300</td>
+            <td><b>$5.300</b></td>
+            <td class="basurero"><i class="fa-solid fa-trash-can"></i></td>
+          </tr>
+          <tr>
+            <td scope="row">
+              <div class="producto">
+                <img
+                  src="../img/suculenta_sin_fondo.png"
+                  alt="Suculenta Echeveria"
+                />
+                <p>Suculenta Echeveria</p>
+              </div>
+            </td>
+            <td>
+              <i class="fa-solid fa-minus"></i
+              ><input type="tel" placeholder="1" min="1" required /><i
+                class="fa-solid fa-plus"
+              ></i>
+            </td>
+            <td>$300</td>
+            <td><b>$300</b></td>
+            <td class="basurero"><i class="fa-solid fa-trash-can"></i></td>
+          </tr>
+          <tr>
+            <td scope="row">
+              <div class="producto">
+                <img
+                  src="../img/alegria_del_hogar-removebg-preview.png"
+                  alt="Alegría del Hogar"
+                />
+                <p>Alegría del Hogar</p>
+              </div>
+            </td>
+            <td>
+              <i class="fa-solid fa-minus"></i
+              ><input type="tel" placeholder="1" min="1" required /><i
+                class="fa-solid fa-plus"
+              ></i>
+            </td>
+            <td>$160</td>
+            <td><b>$160</b></td>
+            <td class="basurero"><i class="fa-solid fa-trash-can"></i></td>
+          </tr>
+          <tr>
+            <td scope="row">
+              <div class="producto">
+                <img
+                  src="../img/sansevieria_c00b6264_674x674-removebg-preview (1).png"
+                  alt="Sansevieria"
+                />
+                <p>Sansevieria</p>
+              </div>
+            </td>
+            <td>
+              <i class="fa-solid fa-minus"></i
+              ><input type="tel" placeholder="1" min="1" required /><i
+                class="fa-solid fa-plus"
+              ></i>
+            </td>
+            <td>$700</td>
+            <td><b>$700</b></td>
+            <td class="basurero"><i class="fa-solid fa-trash-can"></i></td>
+          </tr>
+          <tr>
+            <td scope="row">
+              <div class="producto">
+                <img src="../img/azalea-removebg-preview.png" alt="Azalea" />
+                <p>Azalea</p>
+              </div>
+            </td>
+            <td>
+              <i class="fa-solid fa-minus"></i
+              ><input type="tel" placeholder="1" min="1" required /><i
+                class="fa-solid fa-plus"
+              ></i>
+            </td>
+            <td>$1.680</td>
+            <td><b>$1.680</b></td>
+            <td class="basurero"><i class="fa-solid fa-trash-can"></i></td>
+          </tr>
+          <tr>
+            <td scope="row">
+              <div class="producto">
+                <img
+                  src="../img/glacoxan-Hormiguicida-Polvo_900x900-removebg-preview.png"
+                  alt="GlacoXAN"
+                />
+                <p>GlacoXAN 250g</p>
+              </div>
+            </td>
+            <td>
+              <i class="fa-solid fa-minus"></i
+              ><input type="tel" placeholder="1" min="1" required /><i
+                class="fa-solid fa-plus"
+              ></i>
+            </td>
+            <td>$740</td>
+            <td><b>$740</b></td>
+            <td class="basurero"><i class="fa-solid fa-trash-can"></i></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="final">
+        <div class="mas_productos">
+          <div>
+            <span><a href="#">Ver más productos</a></span>
+          </div>
+          <div class="subtotal"><p>Subtotal: $8.880</p></div>
+        </div>
+        <div class="total">
+          <p><strong>Total: $8.880</strong></p>
+        </div>
+        <div class="boton_compra">
+          <a href="./error.html"><button>Iniciar compra</button></a>
+        </div>
+      </div>
+    </div>
+    <!--Fin contenido-->
+    <!--Contenido para dispositivos móviles-->
+    <div class="container-md contenido_dispositivos_moviles">
+      <div class="contenedor_encabezado">
+        <h3 class="encabezado">Carrito de compras</h3>
+      </div>
+      <div class="tarjeta_producto">
+        <div class="row titulo_dispositivo_movil">
+          <div class="col-10"><p>Ficus Benjamina</p></div>
+          <div class="col-2 basurero_movil">
+            <i class="fa-regular fa-trash-can"></i>
+          </div>
+        </div>
+        <div class="row dispositivo_movil">
+          <div class="col-3">
+            <img src="../img/Ficus_sin_fondo.png" alt="Ficus Benjamina" />
+          </div>
+          <div class="col-6">
+            <i class="fa-solid fa-minus"></i
+            ><input type="tel" placeholder="1" min="1" required /><i
+              class="fa-solid fa-plus"
+            ></i>
+          </div>
+          <div class="col-3"><p>$5.300</p></div>
+        </div>
+      </div>
+      <div class="tarjeta_producto">
+        <div class="row titulo_dispositivo_movil">
+          <div class="col-10"><p>Suculenta Echeveria</p></div>
+          <div class="col-2 basurero_movil">
+            <i class="fa-regular fa-trash-can"></i>
+          </div>
+        </div>
+        <div class="row dispositivo_movil">
+          <div class="col-3">
+            <img
+              src="../img/suculenta_sin_fondo.png"
+              alt="Suculenta Echeveria"
+            />
+          </div>
+          <div class="col-6">
+            <i class="fa-solid fa-minus"></i
+            ><input type="tel" placeholder="1" min="1" required /><i
+              class="fa-solid fa-plus"
+            ></i>
+          </div>
+          <div class="col-3"><p>$300</p></div>
+        </div>
+      </div>
+      <div class="tarjeta_producto">
+        <div class="row titulo_dispositivo_movil">
+          <div class="col-10"><p>Alegría del Hogar</p></div>
+          <div class="col-2 basurero_movil">
+            <i class="fa-regular fa-trash-can"></i>
+          </div>
+        </div>
+        <div class="row dispositivo_movil">
+          <div class="col-3">
+            <img
+              src="../img/alegria_del_hogar-removebg-preview.png"
+              alt="Alegría del Hogar"
+            />
+          </div>
+          <div class="col-6">
+            <i class="fa-solid fa-minus"></i
+            ><input type="tel" placeholder="1" min="1" required /><i
+              class="fa-solid fa-plus"
+            ></i>
+          </div>
+          <div class="col-3"><p>$160</p></div>
+        </div>
+      </div>
+      <div class="tarjeta_producto">
+        <div class="row titulo_dispositivo_movil">
+          <div class="col-10"><p>Sansevieria</p></div>
+          <div class="col-2 basurero_movil">
+            <i class="fa-regular fa-trash-can"></i>
+          </div>
+        </div>
+        <div class="row dispositivo_movil">
+          <div class="col-3">
+            <img
+              src="../img/sansevieria-removebg-preview.png"
+              alt="Sansevieria"
+            />
+          </div>
+          <div class="col-6">
+            <i class="fa-solid fa-minus"></i
+            ><input type="tel" placeholder="1" min="1" required /><i
+              class="fa-solid fa-plus"
+            ></i>
+          </div>
+          <div class="col-3"><p>$700</p></div>
+        </div>
+      </div>
+      <div class="tarjeta_producto">
+        <div class="row titulo_dispositivo_movil">
+          <div class="col-10"><p>Azalea</p></div>
+          <div class="col-2 basurero_movil">
+            <i class="fa-regular fa-trash-can"></i>
+          </div>
+        </div>
+        <div class="row dispositivo_movil">
+          <div class="col-3">
+            <img src="../img/azalea-removebg-preview.png" alt="Azalea" />
+          </div>
+          <div class="col-6">
+            <i class="fa-solid fa-minus"></i
+            ><input type="tel" placeholder="1" min="1" required /><i
+              class="fa-solid fa-plus"
+            ></i>
+          </div>
+          <div class="col-3"><p>$1.680</p></div>
+        </div>
+      </div>
+      <div class="tarjeta_producto">
+        <div class="row titulo_dispositivo_movil">
+          <div class="col-10"><p>GlacoXAN 250g</p></div>
+          <div class="col-2 basurero_movil">
+            <i class="fa-regular fa-trash-can"></i>
+          </div>
+        </div>
+        <div class="row dispositivo_movil">
+          <div class="col-3">
+            <img
+              src="../img/glacoxan-Hormiguicida-Polvo_900x900-removebg-preview.png"
+              alt="GlacoXAN"
+            />
+          </div>
+          <div class="col-6">
+            <i class="fa-solid fa-minus"></i
+            ><input type="tel" placeholder="1" min="1" required /><i
+              class="fa-solid fa-plus"
+            ></i>
+          </div>
+          <div class="col-3"><p>$740</p></div>
+        </div>
+      </div>
+      <div class="final_dispositivos_moviles">
+        <div><p>Subtotal: $8.880</p></div>
+        <div class="total_movil"><p>Total: $8.880</p></div>
+      </div>
+      <div class="boton_compra_movil">
+        <a href="./error.html"><button>Iniciar compra</button></a>
+      </div>
+      <span><a href="#">Ver más productos</a></span>
+    </div>
+    <!--Fin contenido para dispositivos móviles-->
+    <!--Footer-->
+    <footer class="bg-dark pt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h3>Redes sociales</h3>
+            <p>
+              Síguenos en nuestras redes sociales para estar al tanto de las
+              últimas novedades y promociones:
+            </p>
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3"></div>
+          <div class="col-md-3"></div>
+          <div class="col-md-3">
+            <h3>Contacto</h3>
+            <p>Teléfono: 555-555-5555</p>
+            <p>Email: info@nuestraempresa.com</p>
+            <p>Dirección: Calle, Ciudad, País</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--Fin footer-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

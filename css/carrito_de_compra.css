@@ -1,0 +1,134 @@
+:root {
+  --verde-oscuro: #498553;
+  --verde-medio: #d7eadd;
+  --verde-claro: #e9f3ed;
+  --verde-amarillo: #c2cf0ab6;
+  --color-fondo: #e7eee8;
+  --verde-azulado: #13542d;
+}
+
+body::-webkit-scrollbar {
+  width: 15px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--verde-medio);
+  border-radius: 5px;
+}
+
+form {
+  width: 70%;
+  margin: 0 auto;
+  background-color: #c2cf0ab6;
+  padding: 2em;
+  border-radius: 5px;
+}
+
+/* .container {
+    background-color: rgb(59, 147, 224);
+    height: 300px;
+} */
+
+.contenedor {
+  margin-top: 30px;
+}
+
+.titulo {
+  display: flex;
+  justify-content: center;
+}
+
+.titulo::before,
+.titulo::after {
+  content: "";
+  height: 1px;
+  background-color: var(--verde-medio);
+  margin-top: 15px;
+  flex-grow: 1;
+}
+
+.titulo::before {
+  margin-right: 5px;
+}
+
+.titulo::after {
+  margin-left: 5px;
+}
+
+input {
+  box-shadow: var(--verde-medio) !important;
+}
+
+.sin_numero {
+  position: absolute;
+  z-index: 1;
+  margin-left: 70%;
+  bottom: 18px;
+  opacity: 35%;
+}
+
+.cvv {
+  display: flex;
+  position: relative;
+}
+
+.codigo_de_seguridad {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  z-index: 1;
+  margin-left: 70%;
+  margin-top: 15px;
+}
+
+.codigo_de_seguridad i {
+  opacity: 40%;
+}
+
+/* i .tooltip::after {
+  content: url(../img/cvv2.jpg);
+} */
+
+select {
+  margin-bottom: 15px;
+}
+
+.accordion-button {
+  background-color: var(--verde-claro) !important;
+  color: black !important;
+  box-shadow: none !important;
+}
+
+.botones_enviar_restablecer input {
+  background-color: var(--verde-oscuro);
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+
+.botones_enviar_restablecer input:hover {
+  background-color: var(--verde-medio);
+  color: var(--verde-oscuro);
+}
+
+@media (orientation: portrait) and (max-width: 600px) {
+  .contenedor_carrito_de_compra {
+    font-size: smaller;
+  }
+
+  .codigo_de_seguridad {
+    margin-left: 50%;
+    margin-top: 18px;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 950px) {
+  .contenedor_carrito_de_compra {
+    font-size: smaller;
+  }
+
+  .codigo_de_seguridad {
+    margin-left: 75%;
+    margin-top: 18px;
+  }
+}
